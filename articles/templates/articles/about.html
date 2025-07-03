@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - ArticleFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Maconda&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="navbar shadow-md py-4 bg-gray-900 text-white">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="{% url 'home' %}" class="text-3xl font-bold" style="font-family: 'Macondo', cursive;">ArticleFinder</a>
+            <div class="space-x-6">
+                <a href="{% url 'home' %}" class="nav-link text-gray-300">Home</a>
+                <a href="{% url 'categories' %}" class="nav-link text-gray-300">Categories</a>
+                <a href="{% url 'about' %}" class="nav-link text-gray-300">About</a>
+                <a href="{% url 'contact' %}" class="nav-link text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white py-20 text-center">
+        <h1 class="text-5xl font-extrabold mb-4">About ArticleFinder</h1>
+        <p class="text-lg max-w-2xl mx-auto">Learn more about who we are and what we do.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container mx-auto py-16 px-4">
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            ArticleFinder is a content aggregation platform built to help users discover and access valuable articles from various reliable sources. Our mission is to simplify the search for trustworthy content in a cluttered digital world.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+            The site is powered by RSS feeds and intelligent parsing tools, updated regularly to ensure the freshest content across categories like technology, science, and business.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <p>&copy; 2025 ArticleFinder. All rights reserved.</p>
+            <div class="space-x-6">
+                <a href="#" class="footer-link text-sm hover:text-white">Privacy Policy</a>
+                <a href="#" class="footer-link text-sm hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categories - ArticleFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Maconda&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="navbar shadow-md py-4 bg-gray-900 text-white">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="{% url 'home' %}" class="text-3xl font-bold" style="font-family: 'Macondo', cursive;">ArticleFinder</a>
+            <div class="space-x-6">
+                <a href="{% url 'home' %}" class="nav-link text-gray-300">Home</a>
+                <a href="{% url 'categories' %}" class="nav-link text-gray-300">Categories</a>
+                <a href="{% url 'about' %}" class="nav-link text-gray-300">About</a>
+                <a href="{% url 'contact' %}" class="nav-link text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white py-20 text-center">
+        <h1 class="text-5xl font-extrabold mb-4">Explore by Categories</h1>
+        <p class="text-lg max-w-2xl mx-auto">Discover articles grouped by various topics and interests.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-semibold text-indigo-700 mb-6">Popular Categories</h2>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-lg">
+            <li class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">Technology</li>
+            <li class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">Science</li>
+            <li class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">Health</li>
+            <li class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">Business</li>
+            <li class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">Education</li>
+            <li class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">Entertainment</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <p>&copy; 2025 ArticleFinder. All rights reserved.</p>
+            <div class="space-x-6">
+                <a href="#" class="footer-link text-sm hover:text-white">Privacy Policy</a>
+                <a href="#" class="footer-link text-sm hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
