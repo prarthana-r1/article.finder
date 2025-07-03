@@ -1,5 +1,12 @@
-<<<<<<< HEAD
-# article_finder
-=======
-# article.finder
->>>>>>> a70644b91575520a6b9ce10dcb70e428a3b2303c
+# ArticleFinder
+
+**ArticleFinder** is a content aggregator that helps users find articles by category or search.
+
+## Features
+
+- **Category filtering**
+- **Pagination support**
+- **Search functionality**
+
+## Run
+- **python manage.py runserver**
