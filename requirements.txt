@@ -2,3 +2,12 @@ gunicorn
 Django
 django-apscheduler
 python-dateutil
+requests
+beautifulsoup4
+lxml
+psycopg2-binary
+django-cors-headers
+django-environ
+django-extensions
+django-filter
+django-rest-framework
